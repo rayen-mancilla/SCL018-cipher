@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    }
+
+/*------Welcomepage-----*/
+/*  Queremos centrar esta parte, poner nuestro logo en la parte izquierda 
+y el texto a la derecha*/
+
+/*------ Main de Welcomepage -----*/
+.screenOne{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin: 20px;
+}
+
+/*------ texto de Welcomepage-----*/
+.textWelcome{
+   display: flex; 
+   flex-direction: column;
+   margin-right: 60px;
+   margin-bottom: 20px;
+      
+}
+
+h1{
+color: #DA7125;
+font-size: 35px;
+text-align: left;
+font-family: 'Secular One', sans-serif;
+
+}
+
+h3{
+ color: white;
+ font-size: 23px;
+ text-align: justify;
+ margin-top: 5px;
+
+}
+
+/*------ Boton de iniciar en Welcomepage-----*/
+.startButton{
+ background-color: #F3C348;
+ color: white;
+ font-size: 30px;
+ padding: 10px;
+ width: 150px;
+ margin-top: 20px;
+ margin-left: auto;
+ margin-right: auto;
+ border: 5px solid #DA7125;
+ border-radius: 10px;
+ 
+
+
+}
+
+/* Logo en Pagina de Bienvenida */
+
+.logoUno{
+   display: flex;
+   height: 600px;
+   width: 600px;
+   padding: 0px;
+   margin-top: -50px;
+   margin-left: 0px;
+}
+
+
+/*------Pagina Principal----*/
+/*Acá queremos centrar los textos y botones */
+
+
+/*Este es nuestro main en la Pagina Principal */
+.screenTwo{
+    display: flex;
+    align-items: center;
+    height: 650px;
+    width: 600 px;
+}
+
+
+h2{
+color: #DA7125;
+}
+
+p{
+    color: white
+}
+
+/* Este es el logo de nuestra Pagina principal */
+
+.logoDos{
+     
+}
+
+/*  Este es nuestro boton de numero  */
+
+input{
+
+}
+
+/* Este es nuestro cuadro texto*/
+
+textarea{
+
+}
+
+/* Estos son los botones de decifrar y crifrar */
+
+.encodeButton{
+    background-color: #F3C348;
+    color: white;
+    
+
+}
+
+.decodeButton{
+    background-color: #F3C348;
+    color: white;
+}
