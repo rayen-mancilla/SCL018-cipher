@@ -18,11 +18,12 @@ function startEncrypta() {
   unveilMainPage.style.display ="block";
 }
 
+// Creando función convirtiendo a mayúscula
+let convertingToCapital= document.getElementById("cipherMessage");
+convertingToCapital.addEventListener("keyup" , capitalLetter)
+function capitalLetter(){
+  convertingToCapital.value= convertingToCapital.value.toUpperCase();
+}
 
 
-//const startButton= document.getElementById("startButton");
-//startButton.addEventListener("click" , startEncrypta);
-//function startEncrypta(){
- //   unveilWelcomePage.style.display= "none" ;
-  //  unveilMainPage.style.display= "block" ;
-//}
+
