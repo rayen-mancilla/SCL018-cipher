@@ -25,5 +25,25 @@ function capitalLetter(){
   convertingToCapital.value= convertingToCapital.value.toUpperCase();
 }
 
+// crear botones cifrado y descifrado
+const buttonEncode1 = document.getElementById("encodeButton");
+const buttonDecode1 = document.getElementById("decodeButton");
+
+//funcion del boton cifrar
+buttonEncode1.addEventListener("click", ()=>{
+  let textEncode = document.getElementById("cipherMessage").value;
+  let offSet = parseInt(document.getElementById("boxNumber").value);
+  document.getElementById("cipherMessage").value = encode(textEncode, offSet);
+});
+
+//funcion del boton descifrar
+buttonDecode1.addEventListener("click", ()=>{
+  let textDecode = document.getElementById("cipherMessage").value;
+  let offSet = parseInt(document.getElementById("boxNumber").value);
+  document.getElementById("cipherMessage").value = decode(textDecode, offSet);
+});
+
+
+
 
 
