@@ -27,12 +27,12 @@ Quisimos desarrollar un logo para darle un sello único.
 #### * Prototipado (Sketching)
 Hicimos un prototipo en papel apegandonos a esta idea "simple", sacamos ideas de otras páginas para guiarnos un poco y llegamos a la conclusión de que esto sería lo mejor.
 
-![Prototipo1](Images/Prototipo1.jpeg)
+![Prototipo1](src/Images/Prototipo1.jpeg)
 
 Luego realizamos nuestro prototipo en Figma, el cual nos ayudó a saber que color o fuentes de texto utilizariamos, los botones de nuestra página, etc. Además creamos nuestro logo en Canvas.
 
-![Encrypta-Figma1](Images/Encrypta-Figma1.jpg)
-![Encrypta-Figma2](Images/Encrypta-Figma2.jpg)
+![Encrypta-Figma1](src/Images/Encrypta-Figma1.jpg)
+![Encrypta-Figma2](src/Images/Encrypta-Figma2.jpg)
 
 #### * Testeo e Iteración de Bosquejo 
 Finalmente nos apegamos bastante al diseño original de nuestra idea y prototipo, recibimos algunos Feedbacks de los cuales destacaron lo simple pero bonita de nuestra página y el Logo que les gustó bastante, por ende no tuvimos la necesidad de realizar cambios significativos en nuestra App más que cambios en la fuente de las letras o colores.
@@ -48,14 +48,12 @@ Para poder realizar esta función, utilizamos Display (None) para ocultar la pá
 
 ### Página Principal
 
-En esta parte, tenemos una breve introducción de lo que se debe hacer para efectuar el cifrado o descifrado del mensaje.
+Esta página contiene una "section" y un "aside". La "section" es el espacio donde presentamos  una breve introducción de lo que se debe hacer la usuaria/o para efectuar el cifrado o descifrado del mensaje. Luego, utilizamos un "input type number" para introducir el número de desplazamiento que la usaria/o decida para el cifrado de su mensaje. Por último, dentro de la parte section, aparece un espacio donde se escribirá el mensaje que la usaria/o quiera cifrar o descifrar.
+En la parte del "aside" incluimos el logo de Encrypta y abajo los dos botones: "cifrar" y "descifrar". Estos botones los introdujimos con dos etiquetas "button" y son los que se encargan de cifrar o descifrar el mensaje que ingrese la usuaria/o.
 
 
-
-
-
-
-
+### Conclusión
+Nuestra aplicación web Encrypta, logra cifrar o descifrar mensaje para cualquier usario o usaria quien quieran proteger la privacidad de sus mensajes.
 
 
 

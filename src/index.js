@@ -3,6 +3,8 @@ import cipher from './cipher.js';
 console.log(cipher);
 
 //Declarando variables para luego aplicar display block& none
+//Block significa mostrar
+//None significa ocultar
 
 let unveilWelcomePage= document.getElementById("welcomePage")
 unveilWelcomePage.style.display="block"
@@ -19,6 +21,7 @@ function startEncrypta() {
 }
 
 // Creando función convirtiendo a mayúscula
+//.value nos ayuda a "rescatar" el valor
 let convertingToCapital= document.getElementById("cipherMessage");
 convertingToCapital.addEventListener("keyup" , capitalLetter)
 function capitalLetter(){
@@ -32,15 +35,15 @@ const buttonDecode1 = document.getElementById("decodeButton");
 //funcion del boton cifrar
 buttonEncode1.addEventListener("click", ()=>{
   let textEncode = document.getElementById("cipherMessage").value;
-  let offSet = parseInt(document.getElementById("boxNumber").value);
-  document.getElementById("cipherMessage").value = encode(textEncode, offSet);
+  let offSet = parseInt(document.getElementById("boxNumber").value,10);
+  document.getElementById("cipherMessage").value = cipher.encode(offSet,textEncode);
 });
 
 //funcion del boton descifrar
 buttonDecode1.addEventListener("click", ()=>{
   let textDecode = document.getElementById("cipherMessage").value;
-  let offSet = parseInt(document.getElementById("boxNumber").value);
-  document.getElementById("cipherMessage").value = decode(textDecode, offSet);
+  let offSet = parseInt(document.getElementById("boxNumber").value,10);
+  document.getElementById("cipherMessage").value = cipher.decode(offSet, textDecode);
 });
 
 
