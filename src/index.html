@@ -1,14 +1,67 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encrypta</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&family=Patua+One&family=Secular+One&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div id="root">
+    <!--Esta es nuestra pagina de Bienvenida, donde se le da iniciar al juego-->
+    <div id="welcomePage">
+      <main class="screenOne" id="screenOne">
+        <section class="textWelcome">
+          <h1>¿Qué es Encrypta?</h1>
+          <h3> Si estas aburrido/a de que lean tus conversaciones <br> ¡Encrypta es tu solución!<br>
+            Es una app con la que puedes cifrar y descifrar mensajes para lo que necesites como por ejemplo; Organizar
+            eventos privados, manifestaciones,
+            mensajes ocultos, etc.<br>
+            ¡Tienes un montón de opciones, sólo pruébalo!!
+          </h3>
+          <button class="startButton" id="startButton">Iniciar</button>
+        </section>
+        <aside class="logoUno">
+          <img src="Images/ENCRYPTA2.png">
+        </aside>
+      </main>
     </div>
-    <script src="index.js" type="module"></script>
-  </body>
+    <!-- Esta es nuestra pagina Principal, donde nos permite modificar un texto-->
+    <div id="mainPage">
+      <main id="screenTwo" class="screenTwo">
+        <section class="principalText">
+          <h2>¡Empieza a Encryptar!</h2>
+          <p>Escribe el mensaje que quieres enviar en la casilla, <br>
+            selecciona el número de desplazamiento hasta 100, <br>
+            pincha la opción que necesites y ¡listo! <br>
+            Copia el texto, link, n° de desplazamiento y envíalo a quien quieras.</p>
+          <input type="number" name="casilla numero" id="boxNumber" role="spinbutton" value="1" min="1" max="100">
+          <textarea id="cipherMessage" class="cipherMessage" row="500" cols="50"
+            placeholder="Escribe un mensaje sin (Ñ)"></textarea>
+        </section>
+        <!-- esta parte contiene el logo y los botones de cifrar y descifrar-->
+        <aside class="containerLogoButtons">
+          <!--este es la imagen de nuestro logo-->
+          <div class="logoDos">
+            <img src="Images/ENCRYPTA2.png">
+          </div>
+          <!--botones de cifrar y descifrar-->
+          <div class="buttons">
+            <button id="encodeButton" class="encodeButton">Cifrar</button>
+            <button id="decodeButton" class="decodeButton">Descifrar</button>
+          </div>
+        </aside>
+
+      </main>
+    </div>
+  </div>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
